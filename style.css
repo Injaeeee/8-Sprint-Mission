@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 70px 0 0;
+    width: 100%;
+}
+
+
+
+
+/* 
+요소 3개 중앙 정렬 및 간격주기 */
+.elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin: 150px;
+}
+
+.element {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+/* 
+search 부분 텍스트 오른쪽 정렬  */
+.element-text-right {
+    display: flex;
+    width: 100%;
+    text-align: right;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.element-text-left {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* 
+요소 3개중 큰 글씨들 */
+.element-main-text {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+/* 
+요소 3개중 작은 글씨들 */
+.element-sub-text {
+
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+/* 
+맨 윗줄 판다마켓 로그인  */
+.topBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 200px;
+    align-items: center;
+}
+
+
+.category {
+    color: #3692FF;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 153px;
+    height: 51px;
+}
+
+.login {
+    background-color: #3692FF;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.frame {
+    position: relative;
+    background-color: #CFE5FF;
+    display: flex;
+    width: 100%;
+    height: 540px;
+    overflow: hidden;
+    padding: 0 360px;
+
+}
+
+.frame-text {
+    font-size: 40px;
+    font-weight: 700;
+    white-space: nowrap;
+
+}
+
+/* 
+장바구니 판다 인사 프레임 */
+.frame-img {
+    position: relative;
+    width: 996px;
+    height: 447px;
+    top: 93px;
+    left: 0px;
+}
+
+/* 
+친구끼리 대화하는 판다 프레임 */
+.frame-img2 {
+    position: relative;
+    width: 996px;
+    height: 540px;
+
+}
+
+/* 
+구경하러가기 버튼 */
+.see-more {
+    background-color: #3692FF;
+    color: #ffffff;
+    border-radius: 40px;
+    display: inline-block;
+    margin: 32px 0;
+    padding: 16px 124px;
+    width: 357px;
+    height: 56px;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+
+.bottomBar {
+    background-color: #111827;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 200px;
+}
+
+
+
+.footer-text-1 {
+    color: #9CA3AF;
+}
+
+.footer-text-2 {
+    color: #E5E7EB;
+    display: flex;
+    gap: 30px;
+
+}
+
+.footer-text-2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.footer-icon {
+    display: flex;
+    gap: 12px;
+}
+
+
+
+/* Tablet */
+@media (max-width: 1200px) {
+
+    .line {
+        display: none;
+    }
+
+    .topBar {
+        padding: 10px 24px;
+    }
+
+    .content {
+        align-items: center;
+    }
+
+    .frame {
+        flex-direction: column;
+        align-items: center;
+        height: 744px;
+        padding: 84px;
+    }
+
+    .frame-img {
+        top: 0px;
+    }
+
+    .frame-text {
+        text-align: center;
+    }
+
+    .elements {
+        gap: 100px;
+        margin: 30px 0px;
+    }
+
+    .element {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .right {
+        flex-direction: column-reverse;
+    }
+
+    .element-text-right {
+        gap: 20px;
+    }
+
+    .element-text-left {
+        gap: 20px;
+    }
+
+    .element-main-text {
+        font-size: 32px;
+
+    }
+
+    .element-sub-text {
+        font-size: 18px;
+    }
+
+    .element-img {
+        width: 90vw;
+    }
+
+    .bottomBar {
+        background-color: #111827;
+        width: 100%;
+        height: 160px;
+        display: flex;
+        justify-content: space-between;
+        align-items: self-start;
+        padding: 32px 100px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .topBar {
+        padding: 10px 16px;
+    }
+
+    .mobile-line {
+        display: inline-block;
+    }
+
+    .bottomBar {
+        flex-wrap: wrap;
+        padding: 32px;
+    }
+
+
+    .see-more {
+        width: 154px;
+        font-size: 15px;
+        white-space: nowrap;
+        margin: 0px;
+        /* 텍스트 줄 바꿈 방지 */
+        display: flex;
+        /* 플렉스 컨테이너로 설정 */
+        align-items: center;
+        /* 수직 중앙 정렬 */
+        justify-content: center;
+        /* 수평 중앙 정렬 */
+    }
+
+    .frame-text {
+        font-size: 32px;
+    }
+
+    .category {
+        font-size: 16px;
+    }
+
+    .elements {
+        gap: 60px;
+    }
+
+    .element-main-text {
+        font-size: 24px;
+    }
+
+    .element-sub-text {
+        font-size: 16px;
+    }
+
+    .frame {
+        height: 540px;
+        padding: 50px;
+    }
+
+    .frame-img {
+        width: 626px;
+        height: 281px;
+        top: 10px;
+    }
+
+    .frame-img2 {
+        width: 497px;
+        height: 269px;
+        top: 90px;
+    }
+}
